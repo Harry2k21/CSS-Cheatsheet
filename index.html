@@ -12,6 +12,7 @@
     <h1> CSS Snippet Cheatsheet</h1>
     <p>Ever have trouble recalling the exact syntax for your favorite CSS code? Give it a permanent home and add it to this page! Select any snippet below and it'll automatically select all of the code for you to copy.</p>
     </header>
+    <main>
     <div class="box">
         <div class="title">Flexbox Row</div>
         <a>Use these three properties to create a Flexbox row layout.</a>
@@ -21,8 +22,59 @@
             flex-wrap: wrap;
           }</div>
     </div>
+    <div class="box">
+        <div class="title">Flexbox Column</div>
+        <a>Use this to create a Flexbox column layout.</a>
+        <div class="snip" id="text"> 
+            .column {
+                display: flex;
+                flex-direction: column
+              }
+        </div>
+    </div>
+    <div class="box">
+        <div class="title">Linear Gradients</div>
+        <a>This will create a background linear gradient from top to bottom.</a>
+        <div class="snip" id="text">.linear-gradient-background {
+            background-image: linear-gradient(
+              rgba(232, 102, 236, 0.3) 0%,
+              rgba(232, 102, 236, 0.6) 100%
+            );
+          }</div>
+    </div>
+    <div class="box">
+        <div class="title" id="BTG">Box Transition Glow</div>
+        <a>Use transition and box shadows to glow on hover.</a>
+        <div class="snip" id="text"> .code-card .card-header {
+            border-radius: 8px;
+            transition: all 0.5s ease-in-out;
+          }
+          
+          .code-card:hover,
+          .code-card:hover .card-header {
+            box-shadow: inset 0px 0px 8px rgba(232, 102, 236, 1), 0 0 15px rgba(232, 102, 236, 1);
+          }</div>
+    </div>
+    <div class="box">
+        <div class="title" id="OCT">Overlay Card with Title</div>
+        <a>Use position properties and negative margins to raise elements higher than their natural starting point.</a>
+        <div class="snip" id="text"> .card-header {
+            position: relative;
+            margin-top: -20px;
+          }</div>
+    </div>
+    <div class="box">
+        <div class="title" id="CGL">CSS Grid Layout</div>
+        <a>Build a 12-column layout using CSS Grid</a>
+        <div class="snip" id="text"> .grid {
+            display: grid;
+            width: 100%;
+            grid-template-columns: repeat(12, 1fr);
+          }</div>
+    </div>
+    </main>
 
     
-    <footer></footer>
+    <footer><h1>Made with ❤️ and CSS</h1></footer>
 </body>
 </html>
